@@ -1,0 +1,43 @@
+\usepackage{fancyvrb} 
+\AtBeginSection{} 
+\usepackage{tikz} 
+
+\titlegraphic { 
+  \begin{tikzpicture}[overlay,remember picture]
+    \node[anchor=north,yshift=-1cm] at (current page.north) {
+      \includegraphics[width=3cm]{includes/logo.png}
+    };
+  \end{tikzpicture}
+} 
+
+\definecolor{bluep}{RGB}{2,33,105} 
+\definecolor{tealp}{RGB}{0,174,202} 
+
+\setbeamercolor{palette primary}{fg=white,bg=tealp}
+\setbeamercolor{palette secondary}{fg=white, bg=bluep}
+\setbeamercolor{palette tertiary}{fg=white, bg=bluep}
+\setbeamercolor{frametitle}{fg=bluep,bg=white}
+\setbeamercolor{title}{fg=bluep,bg=white}
+\setbeamercolor{item}{fg=bluep}
+\setbeamercolor{item projected}{fg=white}
+\setbeamercolor{section in toc}{fg=bluep} 
+
+\setbeamertemplate{background canvas}{
+  \ifnum\thepage=1\relax
+    \includegraphics[width=\paperwidth,height=\paperheight]{includes/background.png}
+  \fi
+} 
+
+\setbeamertemplate{title page}{
+  \thispagestyle{empty}
+  \vfill
+  \begin{center}
+    \inserttitlegraphic\par
+    \vspace{1cm} 
+    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle}\par
+    {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle}\par
+    {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor}\par
+    {\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate}\par
+  \end{center}
+  \vfill
+}
