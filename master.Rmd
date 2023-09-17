@@ -1,26 +1,44 @@
 ---
-title: "Metodologii de cercetare cantitativă în psihologie"
-subtitle: "`Introducere în inferenţa Bayesiană    `"
+title: "Titlul lucrarii"
+subtitle: "`Subtitlu`"
 author: "George Gunnesch-Luca"
 date: "`2023 Semestrul 1`"
 fontsize: 11pt # Set the font size to 11 points
 mathspec: true # Enable mathspec package for metropolis theme
 aspectratio: 169 # Set the aspect ratio to 16:9
+bibliography: referinte.bib #The reference files
 #classoption: handout # Uncomment this line to activate the handout option
 
 output: 
   beamer_presentation:
-    theme: "CambridgeUS" # Set the presentation theme
-    colortheme: "dolphin" # Set the color theme
+    theme: "CambridgeUS"  # Set the presentation theme
     fonttheme: "professionalfonts" # Set the font theme
     latex_engine: xelatex # Use XeLaTeX engine for metropolis theme
     toc: true # Include table of contents
     slide_level: 2 # Set the slide level to 2
     keep_tex: false # Do not keep the .tex file after knitting
-toc-title: "Temele principale" # Set the title of the table of contents
+toc-title: "Conţinut" # Set the title of the table of contents
 
 header-includes:
   - \input{includes/presentation_setup.tex}
 ---
 
+# Fundamentul Teoretic
 
+## Narcisism ca Trăsătură de Personalitate
+
+[@gluca2023; @yalch2020; @briganti2022; @liu2022; @ren2021; @van2021 @biddlestone2022]
+
+## Narcisism și Viața Profesională
+
+# Cercetarea
+
+## Designul și Metoda Studiului
+
+## Metode de Măsurare
+
+# Rezultate
+
+# Concluzie
+
+## Referinte{.allowframebreaks}
